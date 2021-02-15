@@ -1,39 +1,106 @@
 ---
-title: Hello World lalala
+title: First Blog By Hexo
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-## edit from github
+Welcome to my first blog. This blog use [Hexo](https://hexo.io/) and [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+参考：https://www.bilibili.com/video/BV1dt4y1Q7UE?p=1
 
-### Create a new post
+## 搭建过程
 
-``` bash
-$ hexo new "My New Post"
+### 本地安装
+本地需要安装: Git, Node.js, Hexo.
+
+### 安装Hexo
+在E盘创建一个文件夹，用于放创建该博客的项目代码，打开命令行，进入这个文件夹下，输入命令：
+
+```bash
+npm install -g hexo-cli
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
+使用命令检查是否安装成功：
 
 ``` bash
-$ hexo server
+hexo -v
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+使用hexo框架创建一个项目：
 
-### Generate static files
-
-``` bash
-$ hexo generate
+```bash
+hexo init myblog
+cd myblog
+npm install
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+myblog项目新建成功，然后用VScode打开该项目，使用命令运行项目：
 
-### Deploy to remote sites
+```bash
+hexo server
 
-``` bash
-$ hexo deploy
 ```
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+在浏览器输入 localhost:4000 就可以看到生成的博客了。
+
+
+### 换一个好看的主题
+
+在github中搜索 hexo theme，然后按照 most stars的顺序来查找，这里使用的是 [cactus](https://github.com/probberechts/hexo-theme-cactus)主题。
+按照博主的说明，将该主题的代码复制到项目中：
+
+```bash
+git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
+```
+
+并在项目中配置这个主题，打开 _config.yml文件修改theme属性：
+```bash
+theme: cactus
+```
+
+
+### GitHub创建个人仓库
+
+创建一个和自己用户名xxx相同的仓库，并且在名字后面加上 .github.io，这样就可以部署到 Github page上，并且访问地址就是  https://xxx.github.io ，分支在master分支上。
+
+这里有两种方式：
+（1）https://[username].github.io， 仓库名必须为 username.github.io，打包产物必须部署到master分支上，适合部署个人博客；
+（2）https://[username].github.io/rep ，仓库名可以自定义，打包产物必须在 gh-pages 分支上，适合部署给自己的开源项目然后做Demo演示页面。
+
+（PS:创建仓库时发现，github目前可以免费创建私有仓库啦，最多支持4人协作。）
+
+
+### 将Hexo部署到GitHub
+
+安装deploy-git：
+```bash
+npm install hexo-deployer-git --save
+```
+
+初始化仓库
+```bash
+git init
+```
+
+添加远程仓库地址
+```bash
+git remote add origin https://github.com/changjingna/cjn.github.io.git
+```
+
+修改项目配置 _config.yml:
+```bash
+deploy:
+  type: git
+  repo: https://github.com/changjingna/changjingna.github.io
+  branch: master
+```
+
+部署代码
+```bash
+npm run deploy
+```
+
+在 github 的个人仓库点击"Settings"，往下滑找到 "GitHub page"，点击[地址](https://changjingna.github.io/), 查看博客是否部署成功。
+
+
+
+
+
+
