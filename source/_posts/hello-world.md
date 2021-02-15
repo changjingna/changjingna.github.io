@@ -99,6 +99,41 @@ npm run deploy
 
 在 github 的个人仓库点击"Settings"，往下滑找到 "GitHub page"，点击[地址](https://changjingna.github.io/), 查看博客是否部署成功。
 
+## 自动化部署
+
+1、提交源代码
+创建 myblogcode 分支，将源代码提交到个人仓库：
+```bash
+git add .
+
+git commit -m 'feat-init'
+
+git push --set-upstream origin myblogcode
+```
+（本地创建分支myblogcode比较方便，点击 Vscode 左下角的 master，上方就会有操作提示）
+
+2、使用github actions 实现自动化部署
+（1）创建一个配置文件使用actions
+创建文件夹：.github -> workflows
+创建文件：deploy.yml
+deploy.yml内容使用b站up主已经写好的内容。
+
+（2）将修改过的项目代码提交到myblogcode分支上
+```bash
+git add .
+
+git commit -m 'feat: add github action'
+
+git push
+```
+
+这样每次修改项目代码后，将代码提交到myblogcode分支上，由 actions 实现代码的自动化部署。
+
+
+## 在线编辑博客
+一个比较巧妙的方式，通过提供一个链接到github编辑博客对应的markdown文件。
+
+
 
 
 
