@@ -1,5 +1,5 @@
 ---
-title: First Blog By Hexo
+title: 使用hexo+github搭建免费个人博客
 date: 2021-02-18 20:56:18
 tags: Hexo
 categories: 建站
@@ -16,7 +16,7 @@ Welcome to my first blog. This blog use [Hexo](https://hexo.io/) and [GitHub](ht
 ### 安装Hexo
 在E盘创建一个文件夹，用于放创建该博客的项目代码，打开命令行，进入这个文件夹下，输入命令：
 
-```bash
+```
 npm install -g hexo-cli
 ```
 

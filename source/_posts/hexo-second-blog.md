@@ -1,5 +1,5 @@
 ---
-title: second-blog
+title: Hexo建站-探索原理1
 date: 2021-02-19 16:05:53
 tags: Hexo
 categories: 建站

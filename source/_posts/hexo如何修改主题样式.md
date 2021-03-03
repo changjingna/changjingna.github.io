@@ -1,5 +1,5 @@
 ---
-title: Hexo如何搭建个人主题
+title: Hexo如何修改主题样式
 date: 2021-02-20 22:56:21
 tags: Hexo
 categories: 建站
