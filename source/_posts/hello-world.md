@@ -1,5 +1,8 @@
 ---
 title: First Blog By Hexo
+date: 2021-02-18 20:56:18
+tags: Hexo
+categories: 建站
 ---
 Welcome to my first blog. This blog use [Hexo](https://hexo.io/) and [GitHub](https://github.com/hexojs/hexo/issues).
 
