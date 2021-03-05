@@ -106,6 +106,3 @@ deploy:
   type: git
   repo: https://github.com/changjingna/changjingna.github.io
   branch: master
-
-aplayer:
-  meting: true
