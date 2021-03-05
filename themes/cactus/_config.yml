@@ -21,6 +21,8 @@ nav:
   projects: https://github.com/changjingna
   tag: /tags/
   category: /categories/
+  search: /search/
+  playlist: /playlist/
 
 
 # Links to your social media accounts.
@@ -114,7 +116,7 @@ favicon:
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
 # 打开代码高亮模式
-highlight: rainbow
+highlight: tomorrow
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
@@ -176,3 +178,6 @@ umami_analytics:
 gravatar:
   email: name@email.com
   hash: d41d8cd98f00b204e9800998ecf8427e
+
+aplayer:
+  meting: true
