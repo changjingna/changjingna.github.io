@@ -1,7 +1,9 @@
 ---
 title: Hexo建站-常用git命令
 date: 2021-03-03 14:34:06
-tags: Hexo, Git
+tags: 
+- Hexo
+- Git
 categories: 建站
 ---
 

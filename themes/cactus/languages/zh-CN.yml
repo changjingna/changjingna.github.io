@@ -34,7 +34,7 @@ post:
 
 search:
   search: 搜索...
-  no_results: 抱歉，没有符合您搜索条件的结果。请换其它关键词再试。
+  no_results: 真不巧，没有符合您搜索条件的结果，换其它关键词试试吧。
 
 pagination:
   page: 第 %d 页，共 %d 页

@@ -22,13 +22,13 @@ npm install -g hexo-cli
 
 使用命令检查是否安装成功：
 
-``` bash
+``` 
 hexo -v
 ```
 
 使用hexo框架创建一个项目：
 
-```bash
+```
 hexo init myblog
 cd myblog
 npm install
@@ -36,7 +36,7 @@ npm install
 
 myblog项目新建成功，然后用VScode打开该项目，使用命令运行项目：
 
-```bash
+```
 hexo server
 
 ```
@@ -49,12 +49,12 @@ hexo server
 在github中搜索 hexo theme，然后按照 most stars的顺序来查找，这里使用的是 [cactus](https://github.com/probberechts/hexo-theme-cactus)主题。
 按照博主的说明，将该主题的代码复制到项目中：
 
-```bash
+```
 git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
 ```
 
 并在项目中配置这个主题，打开 _config.yml文件修改theme属性：
-```bash
+```
 theme: cactus
 ```
 
@@ -73,22 +73,22 @@ theme: cactus
 ### 将Hexo部署到GitHub
 
 安装deploy-git：
-```bash
+```
 npm install hexo-deployer-git --save
 ```
 
 初始化仓库
-```bash
+```
 git init
 ```
 
 添加远程仓库地址
-```bash
+```
 git remote add origin https://github.com/changjingna/cjn.github.io.git
 ```
 
 修改项目配置 _config.yml:
-```bash
+```
 deploy:
   type: git
   repo: https://github.com/changjingna/changjingna.github.io
@@ -96,7 +96,7 @@ deploy:
 ```
 
 部署代码
-```bash
+```
 npm run deploy
 ```
 
@@ -106,7 +106,7 @@ npm run deploy
 
 1、提交源代码
 创建 myblogcode 分支，将源代码提交到个人仓库：
-```bash
+```
 git add .
 
 git commit -m 'feat-init'
@@ -122,7 +122,7 @@ git push --set-upstream origin myblogcode
 deploy.yml内容使用b站up主已经写好的内容。
 
 （2）将修改过的项目代码提交到myblogcode分支上
-```bash
+```
 git add .
 
 git commit -m 'feat: add github action'

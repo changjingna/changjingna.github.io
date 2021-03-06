@@ -178,3 +178,7 @@ umami_analytics:
 gravatar:
   email: name@email.com
   hash: d41d8cd98f00b204e9800998ecf8427e
+
+# 不蒜子页面统计
+busuanzi:
+  enabled: true
